@@ -8,6 +8,7 @@ $db = new DB();
 
 $good = new Good($db);
 $user = new User($db);
+$order = new Order($db);
 
 echo $good->getOne(2);
 echo '<br>';
@@ -17,8 +18,8 @@ echo '<br>';
 echo $user->getOne(2);
 echo '<br>';
 echo $user->getAll();
-
-function test()
-{
-    echo 'Hello World <br>';
-}
+echo '<br>';
+echo '<br>';
+echo $order->getOne(2);
+echo '<br>';
+echo $order->getAll();

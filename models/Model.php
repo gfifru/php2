@@ -24,9 +24,7 @@ abstract class Model
     {
         $tableName = $this->getTableName();
         $sql = "SELECT * FROM {$tableName} WHERE id = " . $id;
-//        $db = new DB();
-//        return $db->find($sql);
-        return $this->db->find($sql); // с 7 версии можно так
+        return $this->db->find($sql);
     }
 
     public function getAll()
